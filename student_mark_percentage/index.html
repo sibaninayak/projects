@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Student Marks Percentage</h1>
+    </header>
+
+    <main class="container">
+      <table>
+        <thead>
+          <th>Sl No</th>
+          <th>Subject Name</th>
+          <th>Scored Marks</th>
+          <th>Total Marks</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>English</td>
+            <td class="scoreMarks" contenteditable="true">90</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Hindi</td>
+            <td class="scoreMarks" contenteditable="true">85</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Maths</td>
+            <td class="scoreMarks" contenteditable="true">60</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Science</td>
+            <td class="scoreMarks" contenteditable="true">70</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Social S</td>
+            <td class="scoreMarks" contenteditable="true">65</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Drawing</td>
+            <td class="scoreMarks" contenteditable="true">95</td>
+            <td>100</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td>Total Marks</td>
+            <td id="totalScoredMarks">465</td>
+            <td id="totalMarks">600</td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="btn-container">
+        <button onclick="calculate()">Calculate</button>
+        <div id="percentage">Percentage :</div>
+      </div>
+    </main>
+    <!-- <footer>
+      <a href="https://www.instagra.com/codebustler">By CodeBustler</a>
+    </footer> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
